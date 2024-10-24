@@ -1,0 +1,393 @@
+/*------------------------Header------------------------*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.logo{
+    width: 120px;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.LogoNombre{
+    width: 100%;
+    background-image: url(CssImgs/ColegioFrontWide.jpeg);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+.headermenu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.Resaltar{
+    background-color: rgba(3, 189, 189, 0.664);
+    border: 3px solid rgb(37, 166, 252);
+}
+
+.indexbut,.carrerasbut,.eventsbut,.adminbut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(3, 189, 189, 0.664);
+    color: rgb(255, 255, 255);
+    width: 24%;
+    height: 40px;
+    border: 3px solid rgb(76, 183, 255);
+    border-radius: 15px;
+    font-weight: 800;
+    transition: 0.2s;
+}
+
+.indexbut:hover,.carrerasbut:hover,.eventsbut:hover,.adminbut:hover{
+    background-color: rgb(63, 155, 155);
+    border: 3px solid rgb(0, 92, 153);
+    height: 50px;
+    border-radius: 20px;
+}
+
+.creditoshead{
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 30px;
+}
+
+    .creditos{
+        display: flex;
+        color: gray;
+        background-color: rgb(0, 0, 0);
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .facebookimg,.phoneimg,.googlemapsimg{
+        width: 50px;
+    }
+
+    .facebut,.ubicacionbut{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        color: gray;
+        width: 100px;
+    
+    }
+
+.facebut:hover,.ubicacionbut:hover{
+    text-decoration: underline;
+}
+/*------------------------Index------------------------*/
+
+.slider {
+    width: 800px;
+    height: 668px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    width: 400%;
+    animation: slide 16s infinite;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -105%;}
+    45%{margin-left: -105%;}
+
+    50%{margin-left: -205%;}
+    70%{margin-left: -205%;}
+
+    75%{margin-left: -305%;}
+    95%{margin-left: -305%;}
+}
+
+.infoinstituto{
+    border: 2px solid rgb(0, 217, 255);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+p{
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+/*-----------------------Events------------------------*/
+.Eventswindow{
+    display: flex;
+    margin-top: 20px;
+}
+
+th{
+    overflow: hidden;
+    border: 1px solid aqua;
+    border-radius: 20px;
+}
+
+.eventbutimg{
+    width: 300px;
+    transition: 0.5s;
+}
+
+.eventbutimg:hover{
+    transform: scale(1.1);
+    width: 310px;
+}
+
+.eventinfobut{
+    background-color: rgb(164, 237, 255);
+    height: 90px;
+    border-radius: 20px;
+}
+
+/*-----------------------EventsMonths------------------------*/
+
+.monthswindow-1{
+display: flex;
+margin-top: 20px;
+justify-content: center;
+}
+
+.monthswindow-2{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.monthsimgs{
+    width: 350px;
+    transition: 0.5s;
+}
+
+.monthsimgs:hover{
+    transform: scale(1.1);
+}
+
+.monthseventinfo{
+    background-color: rgb(18, 160, 77);
+    height: 90px;
+    color: white;
+}
+
+/*-----------------------Administracion------------------------*/
+
+.organigrama{
+    display: flex;
+    justify-content: center;
+}
+
+.organigramaimg{
+    border: 5px solid aqua;
+}
+
+.infosecretaria{
+    margin-top: 15px;
+    border: 2px solid aqua;
+    padding: 5px;
+    justify-content: center;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.direccioninfohead{
+    text-align: center;
+}
+.direccioninfo-1,.direccioninfo-2{
+    padding: 15px;
+    justify-content: center;
+    text-align: left;
+}
+
+.direccioninfogeneral{
+    display: flex;
+}
+
+.direccionborder{
+    margin-top: 15px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+}
+
+/*-----------------------Carreras------------------------*/
+.menucarreras{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carrerasbutimg{
+    width: 300px;
+}
+
+.ofertabut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid aqua;
+    width: 35%;
+    transition: 0.5s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.ofertabut:hover{
+    transform: scale(1.1);
+}
+
+.carrerasborder{
+    border: 2px solid aqua;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.formubut{
+    display: flex;
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 80%;
+    background-color: rgba(3, 189, 189, 0.664);
+    border: 3px solid rgb(76, 183, 255);
+    color: white;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.formubut:hover{
+    height: 80px;
+    background-color: rgb(63, 155, 155);
+    border: 3px solid rgb(0, 92, 153);
+}
+
+/*-----------------------Informatica-----------------------*/
+.informaticahead{
+    text-align: center;
+    background-image: url(CssImgs/TapizInformatica.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.arealaboral{
+    display: flex;
+    text-align: start;
+    align-items: center;
+    height: 90px;
+    padding-left: 40px;
+    text-decoration: underline;
+    margin-top: 15px;
+    color: white;
+    border-radius: 15px;
+    background-image: url(CssImgs/FondoBiblioteca.webp);
+    background-size: cover;
+}
+
+.ofertalaboral{
+ padding: 15px;
+ border: 2px solid aqua;
+ border-radius: 15px;
+}
+/*-----------------------Finanzas-----------------------*/
+.finanzashead{
+    text-align: center;
+    background-image: url(CssImgs/TapizFinanzas.png);
+    color: black;
+}
+
+.informaticagrados,.contaduriagrados{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 20px;
+}
+
+/*-----------------------Formularios-----------------------*/
+.Formularios{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.backform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(204, 232, 255);
+    width: 250px;
+    height: 560px;
+    border-radius: 20px;
+}
+
+.datosinfoform{
+    font-size: 18px;
+    color: rgb(0, 81, 255);
+}
+
+.Formu1,.Formu2,.Formu3{
+    width: 200px;
+    height: 430px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(3, 189, 189, 0.664);
+    color: rgb(255, 255, 255);
+    width: 24%;
+    height: 40px;
+    border: 3px solid rgb(76, 183, 255);
+    border-radius: 20px;
+    font-weight: 800;
+    margin: 20px auto;
+    transition: 0.2s;
+}
+
+.enviar:hover{
+    background-color: rgb(63, 155, 155);
+    border: 3px solid rgb(0, 92, 153);
+    height: 50px;
+}
